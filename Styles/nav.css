@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    position: absolute;
+    height: 130px;
+}
+
+.header_conSocial_contact {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.header_conSocial_social {
+    display: flex;
+    border: solid black 2px;
+}
