@@ -48,13 +48,13 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
-    right: 3rem;
-    left: 3rem;
+    right: 0rem;
+    left: 0rem;
     top: 0;
-    /* 
-    width: 120rem;
-    justify-content: center;
-    */
+
+    width: 100%;
+    background-color: #02005a;
+
 }
 
 .header_conSocial {
@@ -62,23 +62,12 @@
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 3rem 1rem 3rem;
-
-    background-color: #4D4BA9;
 }
 
 .header_conSocial_contact {
     display: flex;
     width: 50%;
     justify-content: space-between;
-    /* 
-    height: 3.5rem;
-    padding-left: 0px;
-    align-items: flex-start;
-    gap: 2rem;
-    flex-shrink: 0;
-    align-self: stretch;
-    */
 
     color: #ffffff;
     text-align: center;
@@ -86,38 +75,15 @@
     font-size: 1.5rem;
 }
 
-/* 
-.header_conSocial_contact_phone,
-.header_conSocial_contact_email {
-    display: flex;
-    width: 12rem;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0; 
-}
-*/
-
-/* .header_conSocial_contact_email {
-    width: 25rem;
-} 
-*/
-
 .header_conSocial_social {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 2rem;
-    /* margin-right: 2rem; */
-    /* flex: 1 0 0; */
 
-    /* border: solid black 2px; */
 }
 
 .header_conSocial_social_links {
-    /* display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 0.5rem;*/
     width: 2rem;
     height: 2rem;
 
@@ -128,16 +94,12 @@
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    /*
-    padding-left: 4rem;
-    align-items: center;
-    align-self: stretch; 
-    */
+    background-color: #ffffff;
+
 }
 
 .header_logo {
     width: 370px;
-    /* align-self: stretch; */
 }
 
 .header_nav_links {
@@ -151,19 +113,4 @@
     color: #02005A;
     font-family: 'Proza Libre', sans-serif;
     font-size: 2rem;
-
-
-    /* 
-    width: 15rem;
-    height: 5rem;
-    */
-
-    /* 
-    text-align: center;
-    */
 }
-
-/*
-.header_nav_link {
-}
-*/
