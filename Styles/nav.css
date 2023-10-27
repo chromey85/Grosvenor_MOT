@@ -59,7 +59,7 @@
 
 .header_conSocial {
     display: flex;
-    width: 100%;
+    width: 95%;
     align-items: center;
     justify-content: space-between;
 }
@@ -89,12 +89,19 @@
 
 }
 
-.navContainer {
+.nav {
     display: flex;
     width: 100%;
+    background-color: white;
+    justify-content: space-around;
+}
+
+.navContainer {
+    display: flex;
+    width: 95%;
     flex-direction: row;
-    justify-content: space-between;
-    background-color: #ffffff;
+    /* justify-content: space-between;
+    background-color: #ffffff; */
 
 }
 
