@@ -62,6 +62,7 @@
     width: 95%;
     align-items: center;
     justify-content: space-between;
+    margin: 0.4rem;
 }
 
 .header_conSocial_contact {
