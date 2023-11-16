@@ -47,6 +47,12 @@ h1 {
     align-items: center;
 }
 
+.welcome_body {
+
+    text-align: center;
+    padding: 0 8rem;
+}
+
 .address_container {
     display: flex;
     flex-direction: row;
@@ -56,7 +62,8 @@ h1 {
 
 .map {
     display: flex;
-    height: 19rem;
+    height: auto;
+    padding: 2rem 0;
 }
 
 .map img {
@@ -65,28 +72,57 @@ h1 {
 }
 
 .addressHours {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: 1fr 2fr; */
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    column-gap: 3rem;
 }
 
-.address {
+/* .address {
     display: flex;
     flex-direction: column;
-    /* align-content: center; */
+    /* align-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .hours {
     display: flex;
     flex-direction: column;
     align-items: center;
+} */
+
+.addressHeading,
+.hoursHeading {
+    text-align: center;
 }
+
+.address,
+.hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid red;
+    padding: 10px;
+}
+
 
 .dayTimes {
     display: flex;
+    gap: 2rem;
 }
 
+li,
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
