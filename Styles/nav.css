@@ -1,50 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;600&display=swap');
 
-
-/* .header {
-    border: red dashed
-}
-
-.header_conSocial {
-    border: yellow solid;
-}
-
-.header_conSocial_contact {
-    border: blue solid;
-}
-
-.header_conSocial_contact_phone,
-.header_conSocial_contact_email {
-    border: greenyellow solid;
-}
-
-.header_conSocial_social {
-    border: solid black 2px;
-}
-
-.header_conSocial_social_links {
-    border: violet solid
-}
-
-.navContainer {
-    border: orange solid;
-}
-
-.header_logo {
-    border: red solid;
-}
-
-.header_nav_links {
-    border: purple solid;
-}
-
-.header_nav_link {
-    border: green solid;
-} */
-
 .header {
     display: flex;
-    height: 8rem;
+    height: max-content;
     flex-direction: column;
     align-items: center;
     position: absolute;
@@ -101,9 +59,6 @@
     display: flex;
     width: 95%;
     flex-direction: row;
-    /* justify-content: space-between;
-    background-color: #ffffff; */
-
 }
 
 .header_logo {
@@ -121,4 +76,73 @@
     color: #02005A;
     font-family: 'Proza Libre', sans-serif;
     font-size: 2rem;
+
+    transition: all 0.5s ease-in-out;
 }
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.bar {
+    height: 2px;
+    width: 27px;
+    background-color: #ffffff;
+    margin: 5px 0;
+}
+
+.header_nav_links.open {
+    transform: translate(0) !important;
+}
+
+@media screen and (max-width: 1320px) {
+
+    .header_conSocial_contact {
+        font-size: 20px;
+    }
+
+    .header_nav_links {
+        font-size: 20px;
+    }
+
+    .header_logo {
+        width: 260px;
+    }
+
+    .header_conSocial_social_links {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 930px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .header_nav_links {
+        position: fixed;
+        /* top: 0px; */
+        left: 0;
+        background-color: #02005a;
+        width: 100%;
+        padding: 10px 0 25px;
+        flex-direction: column;
+        row-gap: 20px;
+        transform: translateX(100%);
+    }
+
+    .header_conSocial {
+        flex-direction: column;
+    }
+
+    .header_conSocial_contact {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 412px) {}
